@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tutorial para Principiantes de HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F8F6F0;
+    }
+
+    h1 {
+      color: navy;
+    } 
+
+    h2 {
+      color: #2c3e50;
+    }
+
+    p {
+      color: #444;
+    }
+
+    .explicacion {
+      background-color: #ffffff;
+      border-left: 5px solid #007bff;
+      padding: 10px;
+      margin: 20px 0;
+    }
+
+    table {
+      background-color: white;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+
+    .caja {
+      border: 2px solid black;
+      padding: 10px;
+      background-color: white;
+      margin-top: 20px;
+    }
+
+    code {
+      background-color: #e8e8e8;
+      padding: 2px 4px;
+      font-family: monospace;
+    }
+        .tarjeta {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: flex;
+      width: 600px;
+      overflow: hidden;
+      padding: 20px;
+      align-items: center;
+      
+    }
+
+    .foto {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .foto img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%; /* Esto hace que la imagen sea circular */
+      border: 3px solid #ccc;
+    }
+
+    .info {
+      flex: 2;
+      padding-left: 24px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      row-gap: 12px;
+      column-gap: 12px;
+    }
+
+    .info label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .info div {
+      color: #555;
+    }
+  </style>
+  <!-- Highlight.js CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <!-- Highlight.js JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+<body>
+
+  <h1>Bienvenido al tutorial</h1>
+
+  <p>UNIVERSIDAD DE XXXX</p>
+  <p>FACULTAD DE XXXX</p>
+  <p>DEPARTAMENTO XXXX</p>
+  <p>CARRERA: XXXXX</p>
+  <p>ASIGNATURA: XXXXX</p>
+  <p>PROF. XXXXx</p>
+
+  <p>Explora nuestra página web que te ayudará a aprender sobre los elementos básicos de HTML.</p>
+
+  <hr>
+
+  <h2>Ejemplos de etiquetas HTML utilizadas</h2>
+
+  <div class="explicacion">
+    <p><strong>Descripción:</strong> mostrar un <strong>párrafo</strong> usamos la etiqueta: <code>&lt;p&gt;</code></p>
+    <p><strong>Ejemplo visual:</strong></p>
+    <p>Codigo:</p>
+    <pre><code>&lt;p&gt;Este es un párrafo de ejemplo&lt;/p&gt;</code></pre>
+    <p>Este es un párrafo de ejemplo.</p>
+  </div>
+
+  <div class="explicacion">
+    <p><strong>Descripción:</strong>Para mostrar un <strong>encabezado</strong> usamos la etiqueta: <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc.</p>
+    <p><strong>Ejemplo visual:</strong></p>
+    <p>Codigo:</p>
+    <pre><code>&lt;h3&gt;Encabezado de nivel 3&lt;/h3&gt;</code></pre>
+    <h3>Encabezado de nivel 3</h3>
+  </div>
+
+  <div class="explicacion">
+    <p><strong>Descripción:</strong>Para mostrar una <strong>imagen</strong> usamos la etiqueta: <code>&lt;img&gt;</code></p>
+    <p><strong>Ejemplo visual:</strong></p>
+    <p>Codigo:</p>
+    <pre><code>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png" alt="Imagen de prueba" width="300"&gt;</code></pre>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png" alt="Imagen de prueba" width="300">
+  </div>
+
+  <div class="explicacion">
+    <p><strong>Descripción:</strong>Para mostrar un <strong>video</strong> usamos la etiqueta: <code>&lt;video&gt;</code></p>
+    <p><strong>Ejemplo visual:</strong></p>
+    <p>Codigo:</p>
+    <pre><code>&lt;video src="https://www.w3schools.com/html/mov_bbb.mp4" controls width="300"&gt;&lt;/video&gt;</code></pre>
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls width="300"></video>
+  </div>
+
+  <div class="explicacion">
+    <p><strong>Descripción:</strong>Para reproducir <strong>audio</strong> usamos la etiqueta: <code>&lt;audio&gt;</code></p>
+    <p><strong>Ejemplo visual:</strong></p>
+    <p>Codigo:</p>
+    <pre><code>&lt;audio src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Komiku/Komiku_-_Its_time_for_adventure/Komiku_-_04_-_Overworld.mp3" controls&gt;&lt;/audio&gt;</code></pre>
+    <audio src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Komiku/Komiku_-_Its_time_for_adventure/Komiku_-_04_-_Overworld.mp3" controls></audio>
+  </div>
+
+  <div class="explicacion">
+    <p><strong>Descripción:</strong>Para crear una <strong>lista no ordenada</strong> usamos <code>&lt;ul&gt;</code> y <code>&lt;li&gt;</code></p>
+    <p><strong>Ejemplo visual:</strong></p>
+    <p>Codigo:</p>
+    <pre><code>&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </div>
+
+  <div class="explicacion">
+    <p><strong>Descripción:</strong>Para crear una <strong>tabla</strong> usamos <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code> y <code>&lt;th&gt;</code></p>
+    <p><strong>Ejemplo visual:</strong></p>
+    <p>Codigo:</p>
+    <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Etiqueta&lt;/th&gt;
+    &lt;th&gt;Descripción&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&amp;lt;p&amp;gt;&lt;/td&gt;
+    &lt;td&gt;Párrafo&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&amp;lt;img&amp;gt;&lt;/td&gt;
+    &lt;td&gt;Imagen&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+    <table>
+      <tr>
+        <th>Etiqueta</th>
+        <th>Descripción</th>
+      </tr>
+      <tr>
+        <td>&lt;p&gt;</td>
+        <td>Párrafo</td>
+      </tr>
+      <tr>
+        <td>&lt;img&gt;</td>
+        <td>Imagen</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="explicacion">
+    <p><strong>Descripción:</strong>Para crear un <strong>formulario</strong> usamos la etiqueta: <code>&lt;form&gt;</code></p>
+    <p><strong>Ejemplo visual:</strong></p>
+    <p>Codigo:</p>
+    <pre><code class="language-html">
+&lt;form&gt;
+  &lt;label&gt;Nombre:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="text" name="nombre"&gt;&lt;br&gt;&lt;br&gt;
+  &lt;label&gt;Mensaje:&lt;/label&gt;&lt;br&gt;
+  &lt;textarea name="mensaje" rows="4" cols="30"&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+  &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;
+</code></pre>
+    <form>
+      <label>Nombre:</label><br>
+      <input type="text" name="nombre"><br><br>
+      <label>Mensaje:</label><br>
+      <textarea name="mensaje" rows="4" cols="30"></textarea><br><br>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+
+  <div class="explicacion">
+    <p><strong>Descripción:</strong>Para aplicar <strong>estilo en línea</strong> se usa el atributo <code>style=""</code></p>
+    <p><strong>Ejemplo visual:</strong></p>
+    <pre><code class="language-html">&lt;p style="color:green;">Este texto es verde gracias al estilo en línea.&lt;/p&gt;</code></pre>
+    <p style="color:green;">Este texto es verde gracias al estilo en línea.</p>
+  </div>
+<hr>
+
+  <div class="tarjeta">
+    <div class="foto">
+      <img src="https://avatars.githubusercontent.com/u/159069475?s=400&u=9a28ead938b646fcafd51be8ee50f4a0635eb208&v=4" alt="Foto personal">
+    </div>
+    <div class="info">
+      <label>Nombre:</label> <div>Hitons</div>
+      <label>Apellido:</label> <div>xxxxx</div>
+      <label>Carrera:</label> <div>xxxx</div>
+      <label>Correo:</label> <div>xxxxx</div>
+    </div>
+  </div>
+</body>
+</html>
